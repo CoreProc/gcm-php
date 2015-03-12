@@ -223,12 +223,13 @@ class Message
     /**
      * Sends the message to GCM using the GCM client.
      *
+     * @return Response
      * @throws Exception
      */
     public function send()
     {
         try {
-            $this->gcmClient->send($this->build());
+            return $this->gcmClient->send($this->build());
         } catch (Exception $e) {
             throw $e;
         }
@@ -251,7 +252,7 @@ class Message
         }
 
         // Set targets
-        if ( ! empty($this->registrationIds)) $data['registrations_ids'] = $this->registrationIds;
+        if ( ! empty($this->registrationIds)) $data['registration_ids'] = $this->registrationIds;
         if ( ! empty($this->notificationKey)) $data['notification_key'] = $this->notificationKey;
 
         // Set options
