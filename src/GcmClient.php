@@ -47,8 +47,8 @@ class GcmClient
                 'headers' => [
                     'Authorization' => 'key=' . $this->apiKey,
                     'Content-Type'  => 'application/json',
-                    'body'          => json_encode($data)
-                ]
+                ],
+                'body'    => json_encode($data)
             ]);
         } catch (RequestException $e) {
             throw $e;
