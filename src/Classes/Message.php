@@ -16,7 +16,7 @@ class Message
     /**
      * @var array
      */
-    private $registrationIds;
+    private $registrationIds = [];
 
     /**
      * @var string
