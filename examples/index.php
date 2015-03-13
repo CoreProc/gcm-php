@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 $gcmClient = new Coreproc\Gcm\GcmClient('AIzaSyCbyvM8Hixg9vU5fI-N3_UmQWymQ3hi-TU');
 

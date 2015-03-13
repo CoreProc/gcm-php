@@ -16,7 +16,7 @@ Create a `composer.json` file and enter the following:
 
     {
         "require": {
-            "coreproc/crypto-guard": "0.*"
+            "coreproc/gcm": "0.1.*"
         }
     }
 
